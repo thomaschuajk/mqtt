@@ -1,0 +1,13 @@
+####################MQTT
+services:
+  mosquitto:
+    image: eclipse-mosquitto:1.6.15
+    volumes:
+      - .\data:/mosquitto/data
+      - .\log:/mosquitto/log
+    ports:
+      - 1883:1883
+      - 9001:9001
+
+
+    
